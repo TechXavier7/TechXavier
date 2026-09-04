@@ -4,574 +4,993 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TechXavier | Digital Solutions</title>
+<title>TechXavier | IT Courses in Jauharabad</title>
 
 <style>
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-  background: #050505;
-  color: white;
-  line-height: 1.6;
+    background: #050505;
+    color: #ffffff;
+    line-height: 1.6;
 }
 
 /* NAVBAR */
 
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(5, 5, 5, 0.95);
-  border-bottom: 1px solid #202020;
-  padding: 18px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5, 5, 5, 0.97);
+    border-bottom: 1px solid #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 7%;
 }
 
 .logo {
-  font-size: 25px;
-  font-weight: bold;
-  color: #00d4ff;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #ff6a00;
 }
 
 nav ul {
-  display: flex;
-  list-style: none;
-  gap: 25px;
+    display: flex;
+    list-style: none;
+    gap: 25px;
 }
 
-nav ul a {
-  text-decoration: none;
-  color: #cccccc;
-  font-size: 15px;
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 15px;
 }
 
-nav ul a:hover {
-  color: #00d4ff;
+nav a:hover {
+    color: #ff6a00;
 }
 
 /* HERO */
 
 .hero {
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 80px 8%;
-  background:
-    radial-gradient(circle at top, #102c38 0%, #050505 55%);
+    min-height: 88vh;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        radial-gradient(circle at top right, #3b1700 0%, #050505 45%);
 }
 
 .hero-content {
-  max-width: 850px;
+    max-width: 900px;
 }
 
-.tag {
-  color: #00d4ff;
-  border: 1px solid #00d4ff;
-  padding: 8px 16px;
-  border-radius: 30px;
-  display: inline-block;
-  margin-bottom: 25px;
-  font-size: 14px;
+.small-title {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #ff6a00;
+    color: #ff6a00;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .hero h1 {
-  font-size: 62px;
-  line-height: 1.15;
-  margin-bottom: 25px;
+    font-size: 70px;
+    line-height: 1.05;
+    margin-bottom: 20px;
 }
 
 .hero h1 span {
-  color: #00d4ff;
+    color: #ff6a00;
 }
 
 .hero p {
-  color: #a0a0a0;
-  font-size: 18px;
-  max-width: 650px;
-  margin: auto;
+    max-width: 700px;
+    margin: auto;
+    color: #aaaaaa;
+    font-size: 18px;
 }
 
-.buttons {
-  margin-top: 35px;
+.hero-buttons {
+    margin-top: 35px;
 }
 
 .btn {
-  display: inline-block;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 8px;
+    display: inline-block;
+    padding: 15px 28px;
+    margin: 7px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.primary {
-  background: #00d4ff;
-  color: black;
+.btn-primary {
+    background: #ff6a00;
+    color: white;
 }
 
-.secondary {
-  border: 1px solid #444;
-  color: white;
+.btn-primary:hover {
+    transform: translateY(-3px);
+    background: #ff7b1a;
 }
 
-/* STATS */
-
-.stats {
-  padding: 35px 8%;
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #1d1d1d;
+.btn-outline {
+    border: 1px solid #555;
+    color: white;
 }
 
-.stat {
-  text-align: center;
+.btn-outline:hover {
+    border-color: #ff6a00;
 }
 
-.stat h2 {
-  color: #00d4ff;
-  font-size: 30px;
+/* ADMISSION BAR */
+
+.admission-bar {
+    background: #ff6a00;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.stat p {
-  color: #888;
-  font-size: 14px;
-}
-
-/* SECTIONS */
+/* GENERAL SECTION */
 
 section {
-  padding: 100px 8%;
+    padding: 90px 8%;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 60px;
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
 }
 
-.section-title h2 {
-  font-size: 42px;
+.section-heading h2 {
+    font-size: 42px;
 }
 
-.section-title p {
-  color: #888;
-  margin-top: 10px;
+.section-heading h2 span {
+    color: #ff6a00;
 }
 
-/* SERVICES */
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+.section-heading p {
+    color: #999;
+    margin-top: 10px;
 }
 
-.service-card {
-  background: #0c0c0c;
-  border: 1px solid #202020;
-  border-radius: 15px;
-  padding: 35px;
-  transition: 0.3s;
+/* COURSES */
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
 }
 
-.service-card:hover {
-  transform: translateY(-7px);
-  border-color: #00d4ff;
+.course-card {
+    background: #0d0d0d;
+    border: 1px solid #252525;
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.3s;
 }
 
-.icon {
-  font-size: 32px;
-  margin-bottom: 20px;
+.course-card:hover {
+    transform: translateY(-7px);
+    border-color: #ff6a00;
 }
 
-.service-card h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
+.course-icon {
+    width: 55px;
+    height: 55px;
+    background: #ff6a00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
-.service-card p {
-  color: #999;
+.course-card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
 }
 
-/* ABOUT */
-
-.about {
-  background: #0a0a0a;
+.course-card p {
+    color: #999;
 }
 
-.about-container {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
+.duration {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 7px 13px;
+    color: #ff6a00;
+    border: 1px solid #4a280f;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
-.about-container h2 {
-  font-size: 42px;
-  margin-bottom: 25px;
+/* INFO SECTION */
+
+.info-section {
+    background: #090909;
 }
 
-.about-container h2 span {
-  color: #00d4ff;
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
-.about-container p {
-  color: #999;
-  font-size: 17px;
-  margin-bottom: 20px;
+.info-card {
+    background: #101010;
+    border: 1px solid #292929;
+    border-radius: 15px;
+    padding: 35px;
 }
 
-/* WHY US */
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+.info-card h3 {
+    margin-bottom: 18px;
+    color: #ff6a00;
 }
 
-.feature {
-  padding: 30px;
-  border-left: 2px solid #00d4ff;
-  background: #0b0b0b;
+.fee {
+    font-size: 52px;
+    font-weight: bold;
+    color: #ff6a00;
 }
 
-.feature h3 {
-  margin-bottom: 10px;
+.info-card p {
+    color: #aaa;
+    margin-top: 10px;
 }
 
-.feature p {
-  color: #888;
+/* CLASSES */
+
+.classes {
+    text-align: center;
+}
+
+.class-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.class-card {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.class-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.class-card h3 {
+    font-size: 25px;
+}
+
+.class-card p {
+    color: #999;
+}
+
+/* LOCATION */
+
+.location-section {
+    background:
+        radial-gradient(circle at bottom left, #351600 0%, #050505 50%);
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.contact-card h3 {
+    color: #ff6a00;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: #aaa;
+    margin-bottom: 12px;
+}
+
+.contact-card a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: #ff6a00;
 }
 
 /* CONTACT */
 
-.contact {
-  background:
-    radial-gradient(circle at center, #102630 0%, #050505 60%);
-}
-
 .contact-box {
-  max-width: 750px;
-  margin: auto;
-  background: #0c0c0c;
-  border: 1px solid #252525;
-  border-radius: 18px;
-  padding: 45px;
+    max-width: 750px;
+    margin: auto;
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-radius: 18px;
+    padding: 40px;
 }
 
 .contact-box h2 {
-  text-align: center;
-  font-size: 35px;
-  margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .contact-box > p {
-  text-align: center;
-  color: #888;
-  margin-bottom: 30px;
+    text-align: center;
+    color: #999;
+    margin-bottom: 25px;
 }
 
 input,
 textarea {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 18px;
-  background: #050505;
-  border: 1px solid #303030;
-  color: white;
-  border-radius: 8px;
-  font-size: 15px;
+    width: 100%;
+    padding: 15px;
+    background: #050505;
+    color: white;
+    border: 1px solid #303030;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 15px;
 }
 
 textarea {
-  height: 140px;
-  resize: none;
+    height: 130px;
+    resize: vertical;
 }
 
 input:focus,
 textarea:focus {
-  outline: none;
-  border-color: #00d4ff;
+    outline: none;
+    border-color: #ff6a00;
 }
 
-.contact-btn {
-  width: 100%;
-  padding: 15px;
-  background: #00d4ff;
-  color: black;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
+.contact-button {
+    width: 100%;
+    background: #ff6a00;
+    border: none;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* FOOTER */
 
 footer {
-  background: #030303;
-  border-top: 1px solid #202020;
-  padding: 35px 8%;
-  text-align: center;
+    background: #020202;
+    border-top: 1px solid #222;
+    padding: 45px 8%;
+    text-align: center;
 }
 
-footer h3 {
-  color: #00d4ff;
-  margin-bottom: 10px;
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer h2 span {
+    color: #ff6a00;
 }
 
 footer p {
-  color: #777;
-  font-size: 14px;
+    color: #888;
+    margin: 8px;
+}
+
+.footer-email {
+    color: #ff6a00;
+    text-decoration: none;
+}
+
+.footer-contact {
+    margin-top: 20px;
 }
 
 /* MOBILE */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
-  nav ul {
-    gap: 12px;
-  }
+    nav {
+        padding: 15px 5%;
+    }
 
-  nav ul a {
-    font-size: 12px;
-  }
+    nav ul {
+        gap: 12px;
+    }
 
-  .hero h1 {
-    font-size: 42px;
-  }
+    nav a {
+        font-size: 12px;
+    }
 
-  .hero p {
-    font-size: 16px;
-  }
+    .logo {
+        font-size: 20px;
+    }
 
-  .services-grid,
-  .features {
-    grid-template-columns: 1fr;
-  }
+    .hero h1 {
+        font-size: 48px;
+    }
 
-  .stats {
-    gap: 35px;
-  }
+    .courses-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
 
-  section {
-    padding: 70px 6%;
-  }
+    .location-grid,
+    .class-grid {
+        grid-template-columns: 1fr;
+    }
 
-  .section-title h2,
-  .about-container h2 {
-    font-size: 34px;
-  }
-
-  .contact-box {
-    padding: 25px;
-  }
+    section {
+        padding: 70px 6%;
+    }
 }
+
+@media (max-width: 480px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-heading h2 {
+        font-size: 33px;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
-<nav>
-  <div class="logo">TechXavier</div>
 
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        Tech<span>X</span>avier
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#admission">Admission</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
 </nav>
 
 
+<!-- HERO -->
+
 <section class="hero" id="home">
 
-  <div class="hero-content">
+    <div class="hero-content">
 
-    <div class="tag">WELCOME TO TECHXAVIER</div>
+        <div class="small-title">TECHXAVIER IT COURSES</div>
 
-    <h1>
-      Turning Ideas Into
-      <span>Digital Reality.</span>
-    </h1>
+        <h1>
+            ADMISSIONS ARE
+            <span>OPEN NOW!</span>
+        </h1>
 
-    <p>
-      We create modern digital experiences and professional
-      solutions designed to help ideas grow in the online world.
-    </p>
+        <p>
+            Start your journey in technology with professional IT courses
+            designed to help you learn modern and valuable digital skills.
+        </p>
 
-    <div class="buttons">
-      <a href="#services" class="btn primary">Explore Services</a>
-      <a href="#contact" class="btn secondary">Contact Us</a>
+        <div class="hero-buttons">
+
+            <a href="#courses" class="btn btn-primary">
+                Explore Courses
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Enroll Now
+            </a>
+
+        </div>
+
     </div>
-
-  </div>
 
 </section>
 
 
-<div class="stats">
-
-  <div class="stat">
-    <h2>Modern</h2>
-    <p>Digital Solutions</p>
-  </div>
-
-  <div class="stat">
-    <h2>Fast</h2>
-    <p>Performance Focused</p>
-  </div>
-
-  <div class="stat">
-    <h2>Creative</h2>
-    <p>Modern Designs</p>
-  </div>
-
+<div class="admission-bar">
+    🎓 ADMISSIONS OPEN — ENROLL NOW!
 </div>
 
 
-<section id="services">
+<!-- COURSES -->
 
-  <div class="section-title">
-    <h2>Our Services</h2>
-    <p>Digital solutions designed for the modern world.</p>
-  </div>
+<section id="courses">
 
-  <div class="services-grid">
+    <div class="section-heading">
 
-    <div class="service-card">
-      <div class="icon">💻</div>
-      <h3>Web Development</h3>
-      <p>
-        Modern, responsive and professional websites built
-        to provide a great experience on every device.
-      </p>
+        <h2>Our <span>Courses</span></h2>
+
+        <p>
+            Choose a course and start building your future in technology.
+        </p>
+
     </div>
 
-    <div class="service-card">
-      <div class="icon">🎨</div>
-      <h3>Modern Design</h3>
-      <p>
-        Clean and attractive designs focused on simplicity,
-        creativity and user experience.
-      </p>
-    </div>
 
-    <div class="service-card">
-      <div class="icon">🚀</div>
-      <h3>Digital Solutions</h3>
-      <p>
-        Smart digital solutions designed to help ideas,
-        projects and businesses grow online.
-      </p>
-    </div>
+    <div class="courses-grid">
 
-  </div>
+
+        <div class="course-card">
+
+            <div class="course-icon">💻</div>
+
+            <h3>AI Assisted Full Stack Development</h3>
+
+            <p>
+                Learn modern web development with AI-assisted tools
+                and full stack technologies.
+            </p>
+
+            <div class="duration">2.5 MONTHS</div>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <div class="course-icon">🤖</div>
+
+            <h3>AI For All</h3>
+
+            <p>
+                Understand Artificial Intelligence and discover how
+                AI can be used in everyday life and work.
+            </p>
+
+            <div class="duration">2 MONTHS</div>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <div class="course-icon">📱</div>
+
+            <h3>AI Assisted Mobile App Development</h3>
+
+            <p>
+                Learn mobile application development with modern
+                AI-assisted development tools.
+            </p>
+
+            <div class="duration">2.5 MONTHS</div>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <div class="course-icon">🖥️</div>
+
+            <h3>Basic Computer Course</h3>
+
+            <p>
+                Learn essential computer skills and build a strong
+                foundation for your digital journey.
+            </p>
+
+            <div class="duration">2 MONTHS</div>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <div class="course-icon">🎨</div>
+
+            <h3>UX/UI Design</h3>
+
+            <p>
+                Learn how to design attractive, modern and
+                user-friendly digital interfaces.
+            </p>
+
+            <div class="duration">2.5 MONTHS</div>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <div class="course-icon">✒️</div>
+
+            <h3>AI Powered Graphic Designing</h3>
+
+            <p>
+                Learn modern graphic design and explore
+                AI-powered creative tools.
+            </p>
+
+            <div class="duration">2.5 MONTHS</div>
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
-<section class="about" id="about">
+<!-- ADMISSION INFORMATION -->
 
-  <div class="about-container">
+<section class="info-section" id="admission">
 
-    <h2>About <span>TechXavier</span></h2>
+    <div class="section-heading">
 
-    <p>
-      TechXavier is focused on creating modern and innovative
-      digital experiences.
-    </p>
+        <h2>Admission <span>Information</span></h2>
 
-    <p>
-      Our goal is simple: transform ideas into clean, modern
-      and powerful digital solutions that stand out.
-    </p>
+        <p>Everything you need to know before enrolling.</p>
 
-  </div>
+    </div>
+
+
+    <div class="info-grid">
+
+
+        <div class="info-card">
+
+            <h3>💰 Course Fee</h3>
+
+            <div class="fee">PKR 7,000</div>
+
+            <p>
+                Seven Thousand Rupees per course.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <h3>🎓 Eligibility Criteria</h3>
+
+            <p>
+                Matric, Intermediate, BS and Above.
+            </p>
+
+            <br>
+
+            <p>
+                Students with an interest in technology are welcome
+                to enroll.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <h3>📜 Certificate</h3>
+
+            <p>
+                Get a certificate of completion upon successful
+                completion of your course.
+            </p>
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
-<section>
+<!-- CLASSES -->
 
-  <div class="section-title">
-    <h2>Why Choose Us?</h2>
-    <p>Focused on quality, creativity and modern technology.</p>
-  </div>
+<section class="classes">
 
-  <div class="features">
+    <div class="section-heading">
 
-    <div class="feature">
-      <h3>Modern Approach</h3>
-      <p>We focus on clean and modern digital experiences.</p>
+        <h2>Morning & Evening <span>Classes</span></h2>
+
+        <p>
+            Flexible timings designed to fit your schedule and pace.
+        </p>
+
     </div>
 
-    <div class="feature">
-      <h3>Responsive Design</h3>
-      <p>Our designs are created to work across different devices.</p>
-    </div>
 
-    <div class="feature">
-      <h3>Creative Thinking</h3>
-      <p>Every idea deserves a creative and unique solution.</p>
-    </div>
+    <div class="class-grid">
 
-  </div>
+
+        <div class="class-card">
+
+            <div class="class-icon">☀️</div>
+
+            <h3>Morning Classes</h3>
+
+            <p>
+                Learn during the day with our flexible morning classes.
+            </p>
+
+        </div>
+
+
+        <div class="class-card">
+
+            <div class="class-icon">🌙</div>
+
+            <h3>Evening Classes</h3>
+
+            <p>
+                Perfect for students who prefer learning in the evening.
+            </p>
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
-<section class="contact" id="contact">
+<!-- LOCATION AND CONTACT DETAILS -->
 
-  <div class="contact-box">
+<section class="location-section">
 
-    <h2>Let's Work Together</h2>
+    <div class="section-heading">
 
-    <p>
-      Have an idea or project? Send us a message.
-    </p>
+        <h2>Contact & <span>Location</span></h2>
 
-    <form>
+        <p>Get in touch with TechXavier today.</p>
 
-      <input type="text" placeholder="Your Name">
+    </div>
 
-      <input type="email" placeholder="Your Email">
 
-      <textarea placeholder="Tell us about your project..."></textarea>
+    <div class="location-grid">
 
-      <button type="button" class="contact-btn">
-        Send Message
-      </button>
 
-    </form>
+        <div class="contact-card">
 
-  </div>
+            <h3>📞 Call / WhatsApp</h3>
+
+            <p>
+                <a href="tel:+923025809021">
+                    +92 302 5809021
+                </a>
+            </p>
+
+            <p>
+                <a href="tel:+923446921013">
+                    +92 344 6921013
+                </a>
+            </p>
+
+            <br>
+
+            <a
+            class="btn btn-primary"
+            href="https://wa.me/923025809021"
+            target="_blank">
+                WhatsApp Us
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>📍 Our Location</h3>
+
+            <p>
+                Beside Marco-Polo<br>
+                Civil Line Jauharabad
+            </p>
+
+            <br>
+
+            <a
+            class="btn btn-outline"
+            href="https://www.google.com/maps/search/Beside+Marco-Polo+Civil+Line+Jauharabad"
+            target="_blank">
+                View Location
+            </a>
+
+        </div>
+
+
+    </div>
 
 </section>
 
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <div class="section-heading">
+
+        <h2>Ready To <span>Enroll?</span></h2>
+
+        <p>
+            Contact us through WhatsApp, phone or email.
+        </p>
+
+    </div>
+
+
+    <div class="contact-box">
+
+        <h2>Send Us a Message</h2>
+
+        <p>
+            Fill in your details and contact TechXavier.
+        </p>
+
+
+        <form onsubmit="sendToWhatsApp(); return false;">
+
+            <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required>
+
+
+            <input
+            type="text"
+            id="course"
+            placeholder="Course You Want To Join"
+            required>
+
+
+            <textarea
+            id="message"
+            placeholder="Your Message"></textarea>
+
+
+            <button
+            type="submit"
+            class="contact-button">
+
+                Send Message on WhatsApp
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
 
-  <h3>TechXavier</h3>
+    <h2>
+        Tech<span style="color:#ff6a00;">X</span>avier
+    </h2>
 
-  <p>
-    Creating modern digital experiences for the future.
-  </p>
+    <p>
+        Building Skills. Creating Futures.
+    </p>
 
-  <br>
 
-  <p>© 2026 TechXavier. All Rights Reserved.</p>
+    <div class="footer-contact">
+
+        <p>📧 Email Us:</p>
+
+        <p>
+
+            <a
+            class="footer-email"
+            href="mailto:techxavierteam@gmail.com">
+
+                techxavierteam@gmail.com
+
+            </a>
+
+        </p>
+
+        <p>
+            📍 Beside Marco-Polo, Civil Line Jauharabad
+        </p>
+
+        <p>
+            © 2026 TechXavier. All Rights Reserved.
+        </p>
+
+    </div>
 
 </footer>
 
+
+<!-- WHATSAPP FORM -->
+
+<script>
+
+function sendToWhatsApp() {
+
+    var name =
+    document.getElementById("name").value;
+
+    var course =
+    document.getElementById("course").value;
+
+    var message =
+    document.getElementById("message").value;
+
+
+    var text =
+    "Hello TechXavier!%0A%0A" +
+
+    "Name: " + name + "%0A" +
+
+    "Course: " + course + "%0A" +
+
+    "Message: " + message;
+
+
+    window.open(
+
+        "https://wa.me/923025809021?text=" + text,
+
+        "_blank"
+
+    );
+
+}
+
+</script>
+
+
 </body>
-  </html> 
+  </html>
